@@ -1,0 +1,98 @@
+/* frontend/src/components/MainContent.css */
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 1200px; /* Limita a largura do conteúdo principal */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center;
+}
+
+.main-content h2 {
+  font-size: 2.5em;
+  color: var(--cor-secundaria);
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 1.1em;
+  color: var(--cor-texto-escuro);
+  margin-bottom: 40px;
+}
+
+.piscinas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo em colunas */
+  gap: 30px; /* Espaçamento entre os cards */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.piscina-card {
+  background-color: #fff; /* Fundo branco para o card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Garante que a imagem não vaze */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Alinha o texto dentro do card à esquerda */
+}
+
+.piscina-card:hover {
+  transform: translateY(-5px); /* Efeito de "levantar" no hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.piscina-card-image {
+  width: 100%;
+  height: 200px; /* Altura fixa para as imagens dos cards */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.piscina-card-info {
+  padding: 20px;
+  flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+  display: flex;
+  flex-direction: column;
+}
+
+.piscina-card-info h3 {
+  font-size: 1.8em;
+  color: var(--cor-secundaria);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.piscina-card-info p {
+  font-size: 1em;
+  color: var(--cor-texto-escuro);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.piscina-card-info .preco {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+  margin-top: auto; /* Empurra o preço para o final do card */
+  margin-bottom: 15px;
+}
+
+.piscina-card-info .preco span {
+  color: var(--cor-principal); /* Destaca o valor do preço */
+}
+
+.ver-detalhes-button {
+  background-color: var(--cor-detalhes); /* Cor de detalhes para o botão */
+  color: var(--cor-secundaria); /* Texto com a cor secundária */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95em;
+  align-self: flex-start; /* Alinha o botão à esquerda dentro do card */
+  transition: background-color 0.3s ease;
+}
+
+.ver-detalhes-button:hover {
+  background-color: #8cd1c7; /* Um tom ligeiramente mais escuro no hover */
+}

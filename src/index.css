@@ -1,3 +1,15 @@
+/* frontend/src/index.css */
+
+:root {
+  /* Definindo as variáveis de cor */
+  --cor-principal: #3EC6F2;
+  --cor-secundaria: #1C3F60;
+  --cor-detalhes: #A1E3D8;
+  --cor-fundo-claro: #f8f8f8; /* Um fundo bem claro, similar ao da imagem */
+  --cor-texto-escuro: #333;
+  --cor-texto-claro: #fff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +17,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--cor-fundo-claro); /* Aplica a cor de fundo global */
+  color: var(--cor-texto-escuro); /* Cor de texto padrão */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Reset básico para links e botões */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }

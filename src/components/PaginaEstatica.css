@@ -1,0 +1,51 @@
+/* frontend/src/components/PaginaEstatica.css */
+
+.pagina-estatica-container {
+  padding: 100px 20px 40px; /* Ajuste para o cabeçalho fixo */
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o título principal */
+  margin-bottom: 40px; /* Espaço inferior */
+}
+
+.pagina-estatica-container h1 {
+  font-size: 2.8em;
+  color: var(--cor-secundaria);
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--cor-principal); /* Linha divisória */
+  padding-bottom: 10px;
+}
+
+.pagina-estatica-container .secao-info {
+  text-align: left; /* Alinha o texto das seções à esquerda */
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid var(--cor-detalhes);
+  border-radius: 8px;
+  background-color: var(--cor-fundo-claro);
+}
+
+.pagina-estatica-container .secao-info h2 {
+  font-size: 1.8em;
+  color: var(--cor-principal);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.pagina-estatica-container .secao-info p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--cor-texto-escuro);
+}
+
+.pagina-estatica-container .secao-info a {
+  color: var(--cor-principal);
+  text-decoration: underline;
+}
+
+.pagina-estatica-container .secao-info a:hover {
+  color: var(--cor-secundaria);
+}
