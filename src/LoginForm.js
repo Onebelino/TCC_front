@@ -1,12 +1,10 @@
-// src/LoginForm.js
-
 import React, { useState } from 'react';
-import { useAuth } from './AuthContext'; // Importa nosso hook
+import { useAuth } from './AuthContext';
 
 export default function LoginForm() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const { login } = useAuth(); // Pega a função 'login' do nosso cérebro
+    const { login } = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
